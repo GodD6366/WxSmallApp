@@ -1,0 +1,44 @@
+.top{
+	width: 100%;
+	height:87%;
+
+}
+.msgbox{
+	display: inline-block;
+	width: 100%;
+}
+.allbox{
+	padding: 10px;
+	border-radius: 5px;
+	font-style: "微软雅黑"
+}
+.left{
+	float: left;
+	background: snow;
+}
+.right{
+	float: right;
+	background: gray;
+	color: white;
+}
+.foot{
+	display: flex;
+	width: 100%;
+	height:10%;
+}
+.input{
+	margin-left: 5px;
+	margin-top: 10px;
+	width: 70%;
+	height: 70%;
+	float: left;
+	box-shadow: 1px 1px 1px 1px;
+	border-radius: 3px;
+	font-size: 20px;
+}
+.send{
+	margin-top: 5px;
+	width: 22%;
+	height: 45px;
+	float: right;
+}

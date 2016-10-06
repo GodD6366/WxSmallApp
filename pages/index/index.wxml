@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">戴长春</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+<view class="btn-area">
+  <navigator url="../WordMem/word" hover-class="navigator-hover" bindtap="show">单词测试</navigator>
+  <navigator url="../Trans/trans" hover-class="navigator-hover" bindtap="show">单词翻译</navigator>
+  <navigator url="../V2EX/v2ex" hover-class="navigator-hover" bindtap="show">V2EX</navigator>
+  <navigator url="../mars/mars" hover-class="navigator-hover" bindtap="show">火星文转换</navigator>
+  <navigator url="../tuling/tuling" hover-class="navigator-hover" bindtap="show">聊天机器人</navigator>
+</view>
+</view>

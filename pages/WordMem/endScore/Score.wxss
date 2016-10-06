@@ -1,0 +1,6 @@
+.Sclass{
+    color: red;
+}
+.def{
+    margin-left: 150px;
+}

@@ -1,0 +1,15 @@
+<view>
+	<view class="hed">
+		<image src="{{avatarUrl}}" /> 
+		<view class="name">ID:{{nickName}}</view>
+		<view class="city">City:{{city}}</view>
+	</view>
+
+	<view class="btn">
+		<button bindtap="clear">清空聊天记录</button>
+	</view>
+
+	<modal title="提示" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="Changeok" bindcancel="Changecancel">
+    确认清空聊天记录吗?
+	</modal>
+</view>

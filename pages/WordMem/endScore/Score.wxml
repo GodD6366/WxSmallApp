@@ -1,0 +1,3 @@
+<view class="def">
+    <text class="Sclass">得分:{{endscore}}</text>  
+</view>

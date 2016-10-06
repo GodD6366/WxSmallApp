@@ -1,0 +1,15 @@
+
+<scroll-view bindscroll="bindscroll" class="top" scroll-y="true" scroll-top="{{scrolltop}}">
+	<block wx:for="{{charts}}">
+		<view class="msgbox" wx:if="{{item[0]==='me'}}">
+			<text class="right allbox">{{item[1]}}</text>	
+		</view>
+		<view class="msgbox" wx:if="{{item[0]==='he'}}">
+			<text class="left allbox">{{item[1]}}</text>	
+		</view>
+	</block>
+</scroll-view>
+<view class="foot">
+	<input  bindinput="bindKeyInput" class="input" value="{{inputValue}}"/>
+	<button class="send" bindtap="send">发送</button>
+</view>

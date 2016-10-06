@@ -1,0 +1,16 @@
+<view>
+	<block wx:for="{{topics}}">
+		<view class="msg"  bindtap="showdetail" id="{{item.id}}">
+			<!-- 头像 -->
+			<view class="header">
+				<image src="{{item.member.avatar_normal}}"></image>
+			</view>
+			<!-- 内容标题 -->
+			<view class="topic">
+				<view class="title">{{item.title}}</view>
+				<view class="username">{{item.member.username}}</view>
+				<view class="chat">{{item.replies}}</view>
+			</view>
+		</view>
+	</block>
+</view>

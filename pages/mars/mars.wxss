@@ -1,0 +1,21 @@
+/**容器 flex-direction: column 表示元素垂直排列*/
+.trans {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 200rpx 0rpx;
+} 
+.tran_box{
+    margin: auto;
+    width: 80%;
+    height: 400rpx;
+    margin-top:50rpx;
+    box-shadow: 1px 1px 1px 1px; 
+    padding: 30rpx;
+}
+.sel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,21 @@
+.hed{
+	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+	margin-top: 20px;
+	padding: 10px;
+	font-style: "华文行楷";
+	font-size: 18px;
+}
+.hed image{
+	margin: o auto;
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+}
+.btn{
+	margin-top: 50px;
+	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}

@@ -1,0 +1,19 @@
+.wordbtn {
+
+  text-align: center;
+  line-height: 60rpx;
+}
+.defword{
+  display: inline-block;
+  text-align: center;
+  line-height: 60rpx;
+}
+.word{
+  margin-left: 20px;
+  display: inline-block;
+  width: auto;
+  height: 70rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+

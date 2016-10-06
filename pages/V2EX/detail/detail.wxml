@@ -1,0 +1,33 @@
+<view>
+<block wx:for="{{info}}">
+	<view class="info">
+		<view class="top">
+			<view class="header">
+				<image src="{{item.member.avatar_normal}}"></image>
+			</view>
+			<view class="topic">{{item.title}}</view>
+		</view>
+
+		<view class="artic">{{item.content}}</view>
+
+		<view class="foot">
+			<view class="name">{{item.member.username}}</view>
+			<view class="time">{{item.created}}</view>
+		</view>
+	</view>
+</block>
+<view class="replies"><text style="font-size:18px;color:dark;">评论:</text>
+<block wx:for="{{replies}}">
+	<view class="rep">
+		<image class="smhed" src="{{item.member.avatar_normal}}"></image>
+		<view class="msg">{{item.content}}</view>
+		<view class="foot">
+			<view class="name">{{item.member.username}}</view>
+			<view class="time">{{item.created}}</view>
+		</view>
+	</view>
+</block>
+</view>
+	<view class="chat">
+	</view>
+</view>

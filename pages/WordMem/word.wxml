@@ -1,0 +1,29 @@
+<text>待选择的单词:</text>
+<radio-group class="radio-group" bindchange="SetKey">
+  <!--<button bindtap="select"  >-->
+    <label class="word" wx:for="{{words}}">
+          <radio id="{{item.index}}" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          <input>{{selected[item.index-1]}}</input>
+    </label>
+  <!--</button>-->
+</radio-group>
+
+<view style="margin-top:80px;"></view>
+<text>可选择的答案:</text>
+<radio-group class="radio-group" bindchange="SetData">
+  <label class="word" wx:for="{{worden}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+
+<view style="margin-top:20px;">
+    <button class="wordbtn" bindtap="show">查看得分</button>
+</view>
+
+<modal title="标题" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="modalGo" bindcancel="modalChange">
+    还有未匹配答案的单词!
+</modal>
+
+<modal title="标题" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden2}}" mask bindconfirm="modalChange2" bindcancel="modalChange2">
+    该单词已经被使用过!
+</modal>

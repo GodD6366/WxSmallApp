@@ -1,0 +1,26 @@
+<!--main.wxml-->
+<view class="page">
+    <view class="trans">
+        <view class="section">
+            <view class="section__title">你要翻译的单词是：{{inputValue}}</view>
+            <input  bindinput="bindKeyInput" placeholder="请输入要翻译单词" value="{{inputValue}}"/>
+        </view>
+        <view class="btn-area">
+        <button type="primary" loading="{{loading}}"
+                disabled="{{disabled}}" bindtap="search"> 翻译
+        </button>
+        </view>
+        <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange" bindcancel="modalChange">
+            {{modalErrorText}}
+        </modal>
+
+    <view class="tran_box"  style="{{trans.length>0?'display:block':'display:none'}}">
+        <view class="section__title">
+            <text>单词:{{tranvalue}}</text>
+        </view>
+        <view class="section__title" wx:for="{{trans}}">
+            <text>{{item}}</text>
+        </view>
+    </view>
+    </view>
+</view>

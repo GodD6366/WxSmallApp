@@ -1,0 +1,33 @@
+<!--main.wxml-->
+<view class="page">
+    <view class="trans">
+        <view class="section">
+            <view class="section__title">你要转换的是：{{inputValue}}</view>
+            <input  bindinput="bindKeyInput" placeholder="请输入要转换的词句" value="{{inputValue}}"/>
+        </view>
+        <view class="btn-area">
+
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for-items="{{items}}">
+                <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+        </radio-group>
+
+        <button type="primary" loading="{{loading}}"
+                disabled="{{disabled}}" bindtap="search"> 转换
+        </button>
+        </view>
+        <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange" bindcancel="modalChange">
+            {{modalErrorText}}
+        </modal>
+
+    <view class="tran_box"  style="{{trans.length>0?'display:block':'display:none'}}">
+        <view class="section__title">
+            <text>原:{{tranvalue}}</text>
+        </view>
+        <view class="section__title" style="margin-top:20px;"> 
+            <text>转换后:{{trans}}</text>
+        </view>
+    </view>
+    </view>
+</view>
